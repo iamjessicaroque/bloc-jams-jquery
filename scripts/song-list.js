@@ -23,6 +23,7 @@ $( document ).ready
               ( event =>
                   {
                     player.playPause(song);
+                    $('button#play-pause').attr('playState', player.playState);
                   }
               );
 
