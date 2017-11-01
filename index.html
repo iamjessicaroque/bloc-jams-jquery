@@ -66,7 +66,7 @@
       <!-- Volume Control  -->
       <div id="volume-control">
         <div class="icon ion-volume-low"></div>
-        <input type="range" class="seek-bar" value="80">
+        <input type="range" class="seek-bar" min="0" max="100" step="1" oninput="setVolume(this.value)" onchange="setVolume(this.value)">
         <div class="icon ion-volume-high"></div>
       </div>
 
